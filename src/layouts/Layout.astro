@@ -2,6 +2,13 @@
 import '../styles/global.css';
 import React from 'react';
 import {GoToUp} from "../components/go-to-up.tsx";
+
+interface Props {
+    title?: string;
+}
+const {
+    title,
+} = Astro.props;
 ---
 
 
@@ -11,15 +18,14 @@ import {GoToUp} from "../components/go-to-up.tsx";
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <link rel="icon" type="image/x-icon" href="/Logo.ico?v=2"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="/Logo.png?v=2"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="/Logo.png?v=2"/>
-    <link rel="apple-touch-icon" href="/Logo.png?v=2"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo.png?v=2"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/logo.png?v=2"/>
+    <link rel="apple-touch-icon" href="/logo.png?v=2"/>
     <!--<link rel="canonical" href="https://tecnoserraturegorgonzola.it"/>-->
     <meta name="robots" content="index, follow">
     <meta name="description"
           content="Chiusi fuori casa o serratura bloccata a Gorgonzola? Servizio fabbro urgente e pronto intervento per apertura porte, cambio cilindri e riparazioni. Massima trasparenza."/>
-    <title>Fabbro Gorgonzola | Pronto Intervento e Riparazione Serrature</title>
+    <title>{title}</title>
     <meta name="author" content="https://cirostrazzullo.it"/>
     <meta name="keywords"
           content="Fabbro Gorgonzola, Fabbro a Gorgonzola, Pronto intervento fabbro Gorgonzola, Apertura porte Gorgonzola, Sostituzione serrature Gorgonzola, Cambio cilindro Gorgonzola, Fabbro urgente Gorgonzola"/>
