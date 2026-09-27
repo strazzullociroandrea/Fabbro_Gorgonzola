@@ -1,0 +1,100 @@
+---
+import {Phone, MapPin, Clock, CheckCircle2} from "lucide-react";
+---
+
+<section id="contatti" class="relative mx-auto my-16 max-w-5xl px-4 sm:px-6 lg:px-8">
+    <div class="relative z-10 py-10">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-[1.1] text-slate-900">
+                Conta<span class="text-brand-blue">ttaci</span>
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+
+            <div class="space-y-6 flex flex-col justify-between">
+                <div class="bg-white rounded-3xl p-7 shadow-xl shadow-slate-900/5 border border-slate-200/60">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-shade-blue w-12 h-12 rounded-2xl flex items-center justify-center shrink-0">
+                            <Phone className="h-5 w-5 text-brand-blue"/>
+                        </div>
+                        <div>
+                            <h3 class="text-sm uppercase font-bold text-slate-900 mb-1">Telefono</h3>
+                            <a href="tel:3333107476"
+                               class="text-slate-700 text-base font-medium hover:text-brand-blue transition-colors">+39
+                                333 310 7476</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl p-7 shadow-xl shadow-slate-900/5 border border-slate-200/60">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-shade-blue w-12 h-12 rounded-2xl flex items-center justify-center shrink-0">
+                            <MapPin className="h-5 w-5 text-brand-blue"/>
+                        </div>
+                        <div>
+                            <h3 class="text-sm uppercase font-bold text-slate-900 mb-1">Zona di Intervento</h3>
+                            <p class="text-slate-700 text-sm font-medium">Gorgonzola (MI)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl p-7 shadow-xl shadow-slate-900/5 border border-slate-200/60">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-shade-blue w-12 h-12 rounded-2xl flex items-center justify-center shrink-0">
+                            <Clock className="h-5 w-5 text-brand-blue"/>
+                        </div>
+                        <div>
+                            <h3 class="text-sm uppercase font-bold text-slate-900 mb-1">Orari</h3>
+                            <div class="space-y-1 text-sm text-slate-700 font-medium">
+                                <p>Lun-Ven: 07:30 - 20:00</p>
+                                <p>Sabato: 08:00 - 20:00</p>
+                                <p>Domenica: Chiuso</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-xl shadow-slate-900/5 border border-slate-200/60 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-extrabold text-slate-900 mb-6 tracking-tight">
+                        Perché sceglierci?
+                    </h3>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <CheckCircle2 className="w-5 h-5 text-brand-blue shrink-0 mt-0.5"/>
+                            <p class="text-slate-700 text-sm sm:text-base font-medium">Interventi rapidi</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <CheckCircle2 className="w-5 h-5 text-brand-blue shrink-0 mt-0.5"/>
+                            <p class="text-slate-700 text-sm sm:text-base font-medium">Tecniche professionali</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <CheckCircle2 className="w-5 h-5 text-brand-blue shrink-0 mt-0.5"/>
+                            <p class="text-slate-700 text-sm sm:text-base font-medium">Massima trasparenza e
+                                affidabilità</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <CheckCircle2 className="w-5 h-5 text-brand-blue shrink-0 mt-0.5"/>
+                            <p class="text-slate-700 text-sm sm:text-base font-medium">Soluzioni di sicurezza
+                                certificate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-100 text-center">
+                    <a
+                            href="tel:3333107476"
+                            class="inline-flex w-full items-center justify-center space-x-3 bg-brand-blue hover:brightness-110 text-white px-6 py-4 rounded-2xl font-bold shadow-lg shadow-blue-900/20 active:scale-95 transition-all text-base sm:text-lg"
+                    >
+                        <Phone className="h-5 w-5"/>
+                        <span>Chiama il 333 310 7476</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
