@@ -2,7 +2,7 @@
 import '../styles/global.css';
 import React from 'react';
 import {GoToUp} from "../components/go-to-up.tsx";
-
+import CookieBanner from "../components/cookie-banner.tsx";
 interface Props {
     title?: string;
 }
@@ -94,6 +94,7 @@ const {
 
 <body>
 <GoToUp client:load/>
+<CookieBanner client:load/>
 <slot/>
 </body>
 </html>
