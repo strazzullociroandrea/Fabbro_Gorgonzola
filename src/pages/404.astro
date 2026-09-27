@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {Home, Phone, ShieldAlert} from 'lucide-react';
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="404 error - Pagina non trovata | Fabbro Gorgonzola">
+    <div class="min-h-screen flex flex-col justify-between bg-white">
+        <header id="header" class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+            <Header/>
+        </header>
+
+        <main class="py-12 sm:py-20 grow flex items-center justify-center">
+            <section id="hero" class="w-full ">
+                <div class="mx-auto flex w-full max-w-7xl flex-col items-center justify-center px-4 sm:px-6 lg:px-8 text-center">
+
+                    <div class="inline-flex items-center text-brand-blue">
+                        <ShieldAlert size={100}/>
+                    </div>
+
+                    <div class="mt-4 inline-block px-4 py-1.5 rounded-full bg-shade-blue border border-blue-500/20 text-brand-blue font-extrabold text-xs uppercase tracking-wider mb-4 shadow-sm">
+                        404 Error
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 mb-6">
+                        Pagina <span class="text-brand-blue">Non Trovata</span>
+                    </h1>
+
+                    <p class="text-slate-600 text-base sm:text-lg mb-10 max-w-md mx-auto leading-relaxed font-medium">
+                        Spiacenti, la pagina che stai cercando non esiste, è stata rimossa o l'indirizzo inserito non è
+                        corretto.
+                    </p>
+
+                    <div class="mt-4 flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+                        <a
+                                href="/"
+                                class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 rounded-2xl bg-brand-blue px-8 py-4 text-base font-bold text-white shadow-xl shadow-blue-900/25 transition-all hover:brightness-110 active:scale-95"
+                        >
+                            <Home className="h-5 w-5"/>
+                            <span>Vai alla Home</span>
+                        </a>
+
+                        <a
+                                href="tel:3333107476"
+                                class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 rounded-2xl bg-slate-100 hover:bg-slate-200 px-8 py-4 text-base font-bold text-slate-800 transition-all border border-slate-200/80 active:scale-95"
+                        >
+                            <Phone className="h-5 w-5 text-brand-blue"/>
+                            <span>Chiamaci</span>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <Footer/>
+        </footer>
+    </div>
+</Layout>

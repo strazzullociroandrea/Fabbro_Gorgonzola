@@ -1,0 +1,70 @@
+---
+import {Image as AstroImage} from 'astro:assets';
+import imm1 from '../assets/imm1.jpeg';
+import imm2 from '../assets/imm2.jpeg';
+import imm3 from '../assets/imm3.jpeg';
+import imm4 from '../assets/imm4.jpeg';
+import imm5 from '../assets/imm5.jpeg';
+
+const immagini = [
+    {src: imm1, alt: "Intervento su serratura e porta blindata"},
+    {src: imm2, alt: "Dettaglio lavorazione fabbro"},
+    {src: imm3, alt: "Sostituzione e riparazione serrature"},
+    {src: imm4, alt: "Apertura porte e casseforti"},
+    {src: imm5, alt: "Installazione componenti di sicurezza"},
+];
+---
+
+<section id="immagini" class="relative mx-auto my-16 max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-[1.1] text-slate-900">
+            I Nostri <span class="text-brand-blue">Lavori</span>
+        </h2>
+        <p class="mt-4 text-base text-slate-600 max-w-2xl mx-auto leading-relaxed font-medium">
+            Alcune foto dai nostri interventi
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-55">
+
+        <div class="group relative overflow-hidden rounded-3xl bg-slate-100 shadow-md md:col-span-2 md:row-span-2 border border-slate-200/60">
+            <AstroImage
+                    src={immagini[0].src}
+                    alt={immagini[0].alt}
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+        </div>
+
+        <div class="group relative overflow-hidden rounded-3xl bg-slate-100 shadow-md md:col-span-1 md:row-span-1 border border-slate-200/60">
+            <AstroImage
+                    src={immagini[1].src}
+                    alt={immagini[1].alt}
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+        </div>
+
+        <div class="group relative overflow-hidden rounded-3xl bg-slate-100 shadow-md md:col-span-1 md:row-span-1 border border-slate-200/60">
+            <AstroImage
+                    src={immagini[2].src}
+                    alt={immagini[2].alt}
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+        </div>
+
+        <div class="group relative overflow-hidden rounded-3xl bg-slate-100 shadow-md md:col-span-1 md:row-span-1 border border-slate-200/60">
+            <AstroImage
+                    src={immagini[3].src}
+                    alt={immagini[3].alt}
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+        </div>
+
+        <div class="group relative overflow-hidden rounded-3xl bg-slate-100 shadow-md md:col-span-1 md:row-span-1 border border-slate-200/60">
+            <AstroImage
+                    src={immagini[4].src}
+                    alt={immagini[4].alt}
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+        </div>
+    </div>
+</section>

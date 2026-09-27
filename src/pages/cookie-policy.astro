@@ -1,0 +1,206 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import {Cookie, FileText, Server, HelpCircle, Building, AlertTriangle, ArrowLeft} from "lucide-react";
+---
+
+<Layout title="Cookie Policy | Fabbro Gorgonzola">
+    <div class="min-h-screen flex flex-col justify-between bg-white text-slate-900">
+        <header id="header" class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+            <Header/>
+        </header>
+
+        <main class="grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
+
+            <button
+                    onclick="window.history.back()"
+                    class="inline-flex items-center space-x-2 px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-sm transition-all mb-10 active:scale-95 cursor-pointer"
+            >
+                <ArrowLeft className="w-4 h-4"/>
+                <span>Torna Indietro</span>
+            </button>
+
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center justify-center p-3 bg-shade-blue rounded-2xl text-brand-blue mb-4 shadow-sm border border-blue-500/20">
+                    <Cookie className="w-8 h-8"/>
+                </div>
+                <h1 class="text-4xl sm:text-5xl font-black tracking-tight leading-[1.1] text-slate-900">
+                    Cookie <span class="text-brand-blue">Policy</span>
+                </h1>
+                <p class="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed font-medium">
+                    Informazioni sui cookie e sugli strumenti di tracciamento utilizzati sul nostro sito web.
+                </p>
+                <div class="mt-6 inline-flex items-center gap-2 px-4 py-1.5 bg-slate-100 rounded-full text-xs font-semibold text-slate-500 border border-slate-200/60">
+                    <span>Ultimo aggiornamento: 28 settembre 2026</span>
+                </div>
+            </div>
+
+            <div class="space-y-8">
+
+                <section
+                        class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/60 shadow-xl shadow-slate-900/5">
+                    <div class="flex items-center gap-3 mb-4 pb-4 border-b border-slate-100">
+                        <div class="p-2.5 bg-shade-blue rounded-xl text-brand-blue">
+                            <FileText className="w-5 h-5"/>
+                        </div>
+                        <h2 class="text-lg font-bold text-slate-900">1. Cosa sono i Cookie</h2>
+                    </div>
+                    <div class="space-y-3 text-sm text-slate-600 leading-relaxed">
+                        <p>
+                            I cookie sono piccoli file di testo che vengono memorizzati sul tuo dispositivo quando
+                            visiti un sito web. Permettono al sito di ricordare le tue preferenze e migliorare la tua
+                            esperienza di navigazione.
+                        </p>
+                        <p>
+                            Il presente sito utilizza esclusivamente cookie tecnici necessari al funzionamento e
+                            strumenti statistici anonimi, senza ricorrere a cookie di profilazione o tracciamento
+                            commerciale.
+                        </p>
+                    </div>
+                </section>
+
+                <section
+                        class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/60 shadow-xl shadow-slate-900/5">
+                    <div class="flex items-center gap-3 mb-4 pb-4 border-b border-slate-100">
+                        <div class="p-2.5 bg-shade-blue rounded-xl text-brand-blue">
+                            <Cookie className="w-5 h-5"/>
+                        </div>
+                        <h2 class="text-lg font-bold text-slate-900">2. Tipologie di Cookie e Tecnologie</h2>
+                    </div>
+                    <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                                <h3 class="font-bold text-slate-900 mb-1">🔧 Cookie Tecnici</h3>
+                                <p class="text-xs text-slate-600">
+                                    Essenziali per la navigazione e per memorizzare le preferenze tecniche dell'utente.
+                                    Non richiedono consenso preventivo.
+                                </p>
+                            </div>
+                            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                                <h3 class="font-bold text-slate-900 mb-1">📊 Strumenti Statistici</h3>
+                                <p class="text-xs text-slate-600">
+                                    Sistemi di analisi tecnica e statistica aggregata per monitorare il rendimento del
+                                    sito sui motori di ricerca senza tracciare i singoli utenti.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section
+                        class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/60 shadow-xl shadow-slate-900/5">
+                    <div class="flex items-center gap-3 mb-4 pb-4 border-b border-slate-100">
+                        <div class="p-2.5 bg-shade-blue rounded-xl text-brand-blue">
+                            <Server className="w-5 h-5"/>
+                        </div>
+                        <h2 class="text-lg font-bold text-slate-900">3. Gestione dei Cookie tramite Browser</h2>
+                    </div>
+                    <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+                        <p>
+                            L'utente può gestire o eliminare i cookie direttamente attraverso le impostazioni del
+                            proprio browser. Di seguito i link alle guide dei principali browser:
+                        </p>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-semibold">
+                            <a href="https://support.google.com/chrome/answer/95647?hl=it" target="_blank"
+                               rel="noreferrer"
+                               class="p-3 rounded-xl bg-slate-50 border border-slate-100 text-center text-slate-700 hover:text-brand-blue hover:border-blue-500/30 transition-all">
+                                Google Chrome
+                            </a>
+                            <a href="https://support.mozilla.org/it/kb/Gestione%20dei%20cookie" target="_blank"
+                               rel="noreferrer"
+                               class="p-3 rounded-xl bg-slate-50 border border-slate-100 text-center text-slate-700 hover:text-brand-blue hover:border-blue-500/30 transition-all">
+                                Mozilla Firefox
+                            </a>
+                            <a href="https://support.apple.com/kb/HT1677?viewlocale=it_IT" target="_blank"
+                               rel="noreferrer"
+                               class="p-3 rounded-xl bg-slate-50 border border-slate-100 text-center text-slate-700 hover:text-brand-blue hover:border-blue-500/30 transition-all">
+                                Apple Safari
+                            </a>
+                            <a href="https://support.microsoft.com/it-it/windows/eliminare-e-gestire-i-cookie"
+                               target="_blank" rel="noreferrer"
+                               class="p-3 rounded-xl bg-slate-50 border border-slate-100 text-center text-slate-700 hover:text-brand-blue hover:border-blue-500/30 transition-all">
+                                Microsoft Edge
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section
+                        class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/60 shadow-xl shadow-slate-900/5">
+                    <div class="flex items-center gap-3 mb-4 pb-4 border-b border-slate-100">
+                        <div class="p-2.5 bg-shade-blue rounded-xl text-brand-blue">
+                            <HelpCircle className="w-5 h-5"/>
+                        </div>
+                        <h2 class="text-lg font-bold text-slate-900">4. Aggiornamenti</h2>
+                    </div>
+                    <div class="space-y-3 text-sm text-slate-600 leading-relaxed">
+                        <p>
+                            La presente informativa potrà essere modificata o aggiornata in qualsiasi momento in base
+                            all'evoluzione tecnica del sito o alle normative vigenti.
+                        </p>
+                    </div>
+                </section>
+
+                <section
+                        class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/60 shadow-xl shadow-slate-900/5">
+                    <div class="flex items-center gap-3 mb-4 pb-4 border-b border-slate-100">
+                        <div class="p-2.5 bg-shade-blue rounded-xl text-brand-blue">
+                            <Building className="w-5 h-5"/>
+                        </div>
+                        <h2 class="text-lg font-bold text-slate-900">5. Titolare del Trattamento</h2>
+                    </div>
+                    <div class="grid sm:grid-cols-2 gap-6 text-sm text-slate-600">
+                        <div class="space-y-2">
+                            <div>
+                                <strong class="text-slate-900 block">Attività:</strong>
+                                <span class="text-slate-700">Fabbro Gorgonzola</span>
+                                <span class="block text-xs text-slate-500 mt-0.5">marchio di proprietà di Luciano, P.IVA 09082580961
+</span>
+                            </div>
+                            <div>
+                                <strong class="text-slate-900 block">Partita IVA:</strong>
+                                <span>09082580961</span>
+                            </div>
+                            <div>
+                                <strong class="text-slate-900 block">Sede legale:</strong>
+                                <span>Via Crispi Francesco, 6 – 20900 MONZA</span>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div>
+                                <strong class="text-slate-900 block">Telefono:</strong>
+                                <a href="tel:3333107476" class="text-brand-blue font-semibold hover:underline">333 310
+                                    7476</a>
+                            </div>
+                            <div>
+                                <strong class="text-slate-900 block">Email:</strong>
+                                <a href="mailto:lasicurezza360@gmail.com"
+                                   class="text-brand-blue font-semibold hover:underline">lasicurezza360@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section
+                        class="bg-slate-50 rounded-3xl p-6 border border-slate-200/60 text-xs text-slate-500 space-y-2">
+                    <div class="flex items-center gap-2 text-slate-700 font-bold uppercase tracking-wider">
+                        <AlertTriangle className="w-4 h-4 text-brand-blue"/>
+                        Nota Tecnica
+                    </div>
+                    <p>
+                        Il Webmaster fornisce esclusivamente il supporto tecnico e la gestione dello spazio server. Il
+                        Webmaster non è responsabile dei contenuti commerciali o delle trattative intercorse tra gli
+                        utenti e l'azienda, restando quest'ultima l'unica responsabile per i servizi erogati e il
+                        trattamento dei dati.
+                    </p>
+                </section>
+
+            </div>
+        </main>
+
+        <footer id="footer">
+            <Footer/>
+        </footer>
+    </div>
+</Layout>

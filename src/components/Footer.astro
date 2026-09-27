@@ -1,0 +1,105 @@
+---
+import {Phone, Mail, MapPin, ArrowUpRight} from 'lucide-react';
+---
+
+<footer class="mt-24 w-full bg-slate-900 text-white pt-20 pb-12 relative overflow-hidden">
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-slate-800">
+
+            <div class="lg:col-span-5 flex flex-col space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="p-2 rounded-xl bg-slate-800 border border-slate-700 shadow-sm">
+                        <img src="./logo.png" alt="logo" class="h-8 w-auto object-contain"/>
+                    </div>
+                    <span class="font-extrabold text-xl tracking-tight text-white uppercase">
+                        Fabbro <span class="text-brand-blue">Gorgonzola</span>
+                    </span>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+                    Riparazione e sostituzione serrature, apertura porte blindate e casseforti, serrande e tapparelle.
+                    Interventi rapidi e professionali.
+                </p>
+                <div class="pt-2">
+                    <span class="inline-block px-3 py-1 rounded-lg bg-slate-800/80 border border-slate-700 text-xs font-mono text-slate-300">
+                        P.IVA: 09082580961
+                    </span>
+                </div>
+            </div>
+
+            <div class="lg:col-span-3 flex flex-col space-y-4">
+                <h4 class="text-white font-extrabold uppercase text-xs tracking-wider">
+                    Note Legali
+                </h4>
+                <ul class="text-slate-400 text-sm space-y-3 font-medium">
+                    <li>
+                        <a href="/cookie-policy"
+                           class="hover:text-white transition-colors flex items-center justify-between group py-1">
+                            <span>Cookie Policy</span>
+                            <ArrowUpRight
+                                    className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-brand-blue"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/privacy-policy"
+                           class="hover:text-white transition-colors flex items-center justify-between group py-1">
+                            <span>Privacy Policy</span>
+                            <ArrowUpRight
+                                    className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-brand-blue"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/terms-of-service"
+                           class="hover:text-white transition-colors flex items-center justify-between group py-1">
+                            <span>Termini e Condizioni</span>
+                            <ArrowUpRight
+                                    className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-brand-blue"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="lg:col-span-4 flex flex-col space-y-4">
+                <h4 class="text-white font-extrabold uppercase text-xs tracking-wider">
+                    Contatti & Sede
+                </h4>
+
+                <a class="text-sm hover:text-white transition-colors flex items-center gap-3 text-slate-300 group font-medium"
+                   href="tel:3333107476">
+                    <div class="p-2 rounded-xl bg-slate-800 text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-all shadow-sm border border-slate-700">
+                        <Phone className="w-4 h-4 shrink-0"/>
+                    </div>
+                    <span>+39 333 310 7476</span>
+                </a>
+
+                <a class="text-sm hover:text-white transition-colors flex items-center gap-3 text-slate-300 group font-medium break-all"
+                   href="mailto:lasicurezza360@gmail.com">
+                    <div class="p-2 rounded-xl bg-slate-800 text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-all shadow-sm border border-slate-700">
+                        <Mail className="w-4 h-4 shrink-0"/>
+                    </div>
+                    <span>lasicurezza360@gmail.com</span>
+                </a>
+
+                <div class="text-sm flex items-start gap-3 text-slate-300">
+                    <div class="p-2 rounded-xl bg-slate-800 text-brand-blue shrink-0 mt-0.5 shadow-sm border border-slate-700">
+                        <MapPin className="w-4 h-4"/>
+                    </div>
+                    <span class="leading-relaxed pt-1">Sede legale: Via Crispi Francesco, 6 – 20900 MONZA</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-8 text-center flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-medium">
+            <p>
+                © {new Date().getFullYear()} Fabbro Gorgonzola. Tutti i diritti riservati.
+            </p>
+            <p>
+                Developed by <a href="https://cirostrazzullo.it" target="_blank" rel="noopener noreferrer"
+                                class="text-slate-300 hover:text-white transition-colors font-bold underline underline-offset-4 decoration-brand-blue">cirostrazzullo.it</a>
+            </p>
+        </div>
+
+    </div>
+</footer>

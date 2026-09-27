@@ -1,0 +1,207 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import {AlertTriangle, Building, FileText, ArrowLeft, Phone, Shield} from "lucide-react";
+---
+
+<Layout title="Termini e Condizioni di Servizio | Fabbro Gorgonzola">
+    <div class="min-h-screen flex flex-col justify-between bg-white text-slate-900">
+        <header id="header" class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+            <Header/>
+        </header>
+
+        <main id="main" class="grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
+
+            <button
+                    onclick="window.history.back()"
+                    class="cursor-pointer inline-flex items-center space-x-2 px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-sm transition-all mb-10 active:scale-95"
+            >
+                <ArrowLeft className="w-4 h-4"/>
+                <span>Torna Indietro</span>
+            </button>
+
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center justify-center p-3 bg-shade-blue rounded-2xl text-brand-blue mb-4 shadow-sm border border-blue-500/20">
+                    <FileText className="w-8 h-8"/>
+                </div>
+                <h1 class="text-4xl sm:text-5xl font-black tracking-tight leading-[1.1] text-slate-900">
+                    Termini e <span class="text-brand-blue">Condizioni</span>
+                </h1>
+                <p class="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed font-medium">
+                    Benvenuto sul nostro sito web. Ti invitiamo a leggere attentamente questi Termini e Condizioni prima
+                    di utilizzare i nostri servizi professionali.
+                </p>
+                <div class="mt-6 inline-flex items-center gap-2 px-4 py-1.5 bg-slate-100 rounded-full text-xs font-semibold text-slate-500 border border-slate-200/60">
+                    <span>Ultimo aggiornamento: 28 settembre 2026</span>
+                </div>
+            </div>
+
+            <div class="space-y-8">
+
+                <section
+                        class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/60 shadow-xl shadow-slate-900/5">
+                    <div class="flex items-center gap-3 mb-4 pb-4 border-b border-slate-100">
+                        <div class="p-2.5 bg-shade-blue rounded-xl text-brand-blue">
+                            <Shield className="w-5 h-5"/>
+                        </div>
+                        <h2 class="text-lg font-bold text-slate-900">1. Accettazione dei Termini</h2>
+                    </div>
+                    <div class="space-y-3 text-sm text-slate-600 leading-relaxed">
+                        <p>
+                            Accedendo e utilizzando i servizi di <strong>Fabbro Gorgonzola</strong>, accetti i seguenti
+                            Termini e Condizioni. Se non sei d'accordo con queste condizioni, ti invitiamo a non
+                            utilizzare il nostro sito web.
+                        </p>
+                        <p>
+                            L'utilizzo dei nostri servizi implica l'accettazione integrale di tutti i termini e
+                            condizioni qui riportati, incluse le politiche di privacy e cookie.
+                        </p>
+                    </div>
+                </section>
+
+                <section
+                        class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/60 shadow-xl shadow-slate-900/5">
+                    <div class="flex items-center gap-3 mb-4 pb-4 border-b border-slate-100">
+                        <div class="p-2.5 bg-shade-blue rounded-xl text-brand-blue">
+                            <FileText className="w-5 h-5"/>
+                        </div>
+                        <h2 class="text-lg font-bold text-slate-900">2. Modifiche ai Termini</h2>
+                    </div>
+                    <div class="space-y-3 text-sm text-slate-600 leading-relaxed">
+                        <p>
+                            <strong>Fabbro Gorgonzola</strong> si riserva il diritto di modificare questi Termini e
+                            Condizioni in qualsiasi momento per adeguarli alle normative vigenti o ai cambiamenti dei
+                            servizi offerti.
+                        </p>
+                        <p>
+                            Le modifiche saranno pubblicate su questa pagina e diventeranno effettive immediatamente
+                            dopo la pubblicazione.
+                        </p>
+                    </div>
+                </section>
+
+                <section
+                        class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/60 shadow-xl shadow-slate-900/5">
+                    <div class="flex items-center gap-3 mb-4 pb-4 border-b border-slate-100">
+                        <div class="p-2.5 bg-shade-blue rounded-xl text-brand-blue">
+                            <Building className="w-5 h-5"/>
+                        </div>
+                        <h2 class="text-lg font-bold text-slate-900">3. Uso del Sito</h2>
+                    </div>
+                    <div class="grid sm:grid-cols-2 gap-4 text-sm text-slate-600">
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                            <h3 class="font-bold text-slate-900 mb-2 flex items-center gap-2">✅ Uso Consentito</h3>
+                            <ul class="space-y-1.5 text-xs text-slate-600">
+                                <li>• Consultazione informazioni sui servizi</li>
+                                <li>• Richiesta preventivi</li>
+                                <li>• Contatto telefonico</li>
+                                <li>• Utilizzo conforme alle leggi applicabili</li>
+                            </ul>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                            <h3 class="font-bold text-slate-900 mb-2 flex items-center gap-2">❌ Uso Vietato</h3>
+                            <ul class="space-y-1.5 text-xs text-slate-600">
+                                <li>• Violazione dei diritti di proprietà intellettuale</li>
+                                <li>• Utilizzo per scopi illeciti o fraudolenti</li>
+                                <li>• Invio di contenuti offensivi o spam</li>
+                                <li>• Tentativi di compromettere la sicurezza</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section
+                        class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/60 shadow-xl shadow-slate-900/5">
+                    <div class="flex items-center gap-3 mb-4 pb-4 border-b border-slate-100">
+                        <div class="p-2.5 bg-shade-blue rounded-xl text-brand-blue">
+                            <Shield className="w-5 h-5"/>
+                        </div>
+                        <h2 class="text-lg font-bold text-slate-900">4. Proprietà Intellettuale</h2>
+                    </div>
+                    <div class="space-y-3 text-sm text-slate-600 leading-relaxed">
+                        <p>
+                            Tutti i contenuti del sito web di <strong>Fabbro Gorgonzola</strong> sono protetti dalle
+                            leggi sul diritto d'autore. È vietata la riproduzione, distribuzione o utilizzo non
+                            autorizzato di qualsiasi materiale presente.
+                        </p>
+                    </div>
+                </section>
+
+                <section
+                        class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/60 shadow-xl shadow-slate-900/5">
+                    <div class="flex items-center gap-3 mb-4 pb-4 border-b border-slate-100">
+                        <div class="p-2.5 bg-shade-blue rounded-xl text-brand-blue">
+                            <AlertTriangle className="w-5 h-5"/>
+                        </div>
+                        <h2 class="text-lg font-bold text-slate-900">5. Limitazione di Responsabilità</h2>
+                    </div>
+                    <div class="space-y-3 text-sm text-slate-600 leading-relaxed">
+                        <p>
+                            <strong>Fabbro Gorgonzola</strong> non sarà responsabile per danni diretti o indiretti
+                            derivanti dall'uso del sito web, fatta salva la responsabilità diretta per i servizi di
+                            fabbro effettivamente prestati sul campo.
+                        </p>
+                    </div>
+                </section>
+
+                <section
+                        class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/60 shadow-xl shadow-slate-900/5">
+                    <div class="flex items-center gap-3 mb-4 pb-4 border-b border-slate-100">
+                        <div class="p-2.5 bg-shade-blue rounded-xl text-brand-blue">
+                            <Phone className="w-5 h-5"/>
+                        </div>
+                        <h2 class="text-lg font-bold text-slate-900">6. Contatti e Riferimenti</h2>
+                    </div>
+                    <div class="grid sm:grid-cols-2 gap-6 text-sm text-slate-600">
+                        <div class="space-y-2">
+                            <div>
+                                <strong class="text-slate-900 block">Attività:</strong>
+                                <span class="text-slate-700">Fabbro Gorgonzola</span>
+                                <span class="block text-xs text-slate-500 mt-0.5">marchio di proprietà di Luciano, P.IVA 09082580961</span>
+                            </div>
+                            <div>
+                                <strong class="text-slate-900 block">Partita IVA:</strong>
+                                <span>09082580961</span>
+                            </div>
+                            <div>
+                                <strong class="text-slate-900 block">Sede legale:</strong>
+                                <span>Via Crispi Francesco, 6 – 20900 MONZA</span>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div>
+                                <strong class="text-slate-900 block">Telefono:</strong>
+                                <a href="tel:3333107476" class="text-brand-blue font-semibold hover:underline">333 310
+                                    7476</a>
+                            </div>
+                            <div>
+                                <strong class="text-slate-900 block">Email:</strong>
+                                <a href="mailto:lasicurezza360@gmail.com"
+                                   class="text-brand-blue font-semibold hover:underline">lasicurezza360@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section
+                        class="bg-slate-50 rounded-3xl p-6 border border-slate-200/60 text-xs text-slate-500 space-y-2">
+                    <div class="flex items-center gap-2 text-slate-700 font-bold uppercase tracking-wider">
+                        <AlertTriangle className="w-4 h-4 text-brand-blue"/>
+                        Nota Tecnica
+                    </div>
+                    <p>
+                        Il Webmaster fornisce esclusivamente il supporto tecnico e la gestione dello spazio server. Il
+                        Webmaster non è responsabile dei contenuti commerciali o delle trattative intercorse tra gli
+                        utenti e l'azienda, restando quest'ultima l'unica responsabile per i servizi erogati.
+                    </p>
+                </section>
+
+            </div>
+        </main>
+
+        <footer id="footer">
+            <Footer/>
+        </footer>
+    </div>
+</Layout>

@@ -1,0 +1,48 @@
+---
+import {Phone} from "lucide-react";
+import React from "react";
+---
+
+<header class="sticky top-0 z-50 backdrop-blur-md bg-white/90 border-b border-slate-100 shadow-sm transition-all">
+    <div class="max-w-7xl px-3 sm:px-6 mx-auto">
+        <div class="flex items-center justify-between h-18 sm:h-20">
+
+            <div class="flex items-center space-x-2.5 sm:space-x-3.5 group cursor-pointer">
+                <div class="relative flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-slate-50 rounded-xl sm:rounded-2xl border border-slate-100 shadow-inner overflow-hidden shrink-0 transition-transform group-hover:scale-105">
+                    <a
+                            href="/"
+                            class="absolute inset-0 flex items-center justify-center">
+                        <img
+                                src="./logo.png"
+                                alt="Logo"
+                                class="h-8 w-8 sm:h-10 sm:w-10 object-contain"
+                        />
+                    </a>
+                </div>
+                <div>
+                    <span class="text-base sm:text-xl font-extrabold tracking-tight text-slate-900 block leading-tight">
+                        Fabbro <span class="text-brand-blue">Gorgonzola</span>
+                    </span>
+                    <div class="flex items-center space-x-1 text-[11px] sm:text-xs text-slate-500 font-semibold mt-0.5">
+                        <span class="truncate max-w-40 sm:max-w-none">Fabbro</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center space-x-3">
+                <a
+                        href="tel:3333107476"
+                        class="hidden sm:inline-flex group relative items-center space-x-3 bg-brand-blue text-white px-5 py-3 rounded-2xl font-bold shadow-lg shadow-blue-900/20 hover:brightness-110 active:scale-95 transition-all duration-200"
+                >
+                    <div class="p-1.5 bg-white/10 rounded-xl group-hover:rotate-12 transition-transform">
+                        <Phone className="h-4 w-4 text-white"/>
+                    </div>
+                    <div class="flex flex-col text-left">
+                        <span class="text-[10px] uppercase tracking-wider text-blue-200 font-medium leading-none">Chiamaci ora</span>
+                        <span class="text-sm tracking-wide leading-tight">333 310 7476</span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</header>
